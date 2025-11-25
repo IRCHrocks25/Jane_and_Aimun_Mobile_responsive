@@ -94,4 +94,12 @@
         'janeandaimunmobileresponsive-production.up.railway.app',
       ],
     },
+    preview: {
+      port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
+      host: '0.0.0.0',
+      allowedHosts: [
+        'localhost',
+        'janeandaimunmobileresponsive-production.up.railway.app',
+      ],
+    },
   });
